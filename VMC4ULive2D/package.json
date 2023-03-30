@@ -1,0 +1,15 @@
+{
+  "name": "xyzjoey.vmc4ulive2d",
+  "version": "0.0.0",
+  "description": "",
+  "displayName": "VMC4ULive2D",
+  "unity": "2022.2",
+  "unityRelease": "12",
+  "documentationUrl": "https://github.com/xyzjoey/VMC4Live2D",
+  "dependencies": {
+    "com.live2d.cubism-cubismloader": "4.0.301"
+  },
+  "author": {
+    "name": "xyzjoey"
+  }
+}

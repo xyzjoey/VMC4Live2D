@@ -1,0 +1,18 @@
+name: Request activation file
+on:
+  workflow_dispatch: {}
+jobs:
+  activation:
+    name: Request activation file
+    runs-on: ubuntu-latest
+    steps:
+      # Request activation file
+      - name: Request activation file
+        id: getActivationFile
+        uses: game-ci/unity-request-activation-file@main
+      # Upload artifact (Unity_v20XX.X.XXXX.alf)
+      - name: Upload artifact
+        uses: actions/upload-artifact@main
+        with:
+          name: ${{ steps.getActivationFile.outputs.filePath }}
+          path: ${{ steps.getActivationFile.outputs.filePath }}
